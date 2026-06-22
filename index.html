@@ -22,7 +22,7 @@
                         outfit: ['Outfit', 'sans-serif'],
                     },
                     colors: {
-                        brandPink: '#ec4899',
+                        brandPink: '#db2777',
                         brandPurple: '#8b5cf6',
                         brandViolet: '#6d28d9',
                         brandCyan: '#06b6d4',
@@ -45,8 +45,8 @@
     </script>
     <style>
         :root {
-            --primary: #ec4899;
-            --primary-hover: #db2777;
+            --primary: #db2777;
+            --primary-hover: #be185d;
             --secondary: #8b5cf6;
             --accent: #06b6d4;
             --neutral-dark: #0f172a;
@@ -83,29 +83,29 @@
 
         /* Gradient styling */
         .text-gradient-cosmo {
-            background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);
+            background: linear-gradient(135deg, #db2777 0%, #8b5cf6 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         .bg-gradient-cosmo {
-            background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);
+            background: linear-gradient(135deg, #db2777 0%, #8b5cf6 100%);
         }
         .bg-gradient-cosmo-dark {
             background: linear-gradient(135deg, #2e1065 0%, #0f172a 100%);
         }
         .border-gradient-cosmo {
-            border-image: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%) 1;
+            border-image: linear-gradient(135deg, #db2777 0%, #8b5cf6 100%) 1;
         }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased font-sans min-h-screen flex flex-col">
 
-    <!-- Emergency Warning Ribbon (Kolkata Emergency Help Desk Support) -->
+    <!-- Emergency Warning Ribbon (Kolkata Help Desk Support with user's phone number) -->
     <div id="emergency-banner" class="bg-gradient-to-r from-brandPink to-brandPurple text-white text-xs md:text-sm py-2.5 px-4 flex justify-between items-center transition-all duration-300">
         <div class="flex items-center gap-2 mx-auto">
             <span class="animate-ping inline-block w-2 h-2 rounded-full bg-white mr-1"></span>
             <strong class="font-bold uppercase tracking-wider">Bookings & Fast Support:</strong> 
-            <span id="nav-emergency-phone" class="underline font-semibold">+91 98300 55111</span>
+            <span id="nav-emergency-phone" class="underline font-semibold">+91 98304 42017</span>
         </div>
         <button onclick="document.getElementById('emergency-banner').remove()" class="text-white hover:text-pink-200 font-bold text-lg">&times;</button>
     </div>
@@ -113,17 +113,17 @@
     <!-- Main Navigation Panel -->
     <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200/80 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Brand Logo & Name (Designed based on Screenshot_20260620_180752.jpg logo vector) -->
+            <!-- Brand Logo & Name (Based on Screenshot_20260620_180752.jpg) -->
             <a href="#home" class="flex items-center gap-3 group">
                 <div class="relative w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-tr from-brandPink to-brandPurple p-0.5 shadow-md shadow-pink-100 transition-transform group-hover:scale-105">
                     <div class="w-full h-full bg-white rounded-full flex items-center justify-center overflow-hidden">
-                        <!-- Custom Inline SVG representing the aesthetic face/contour silhouette from image -->
+                        <!-- Custom Inline SVG representing the aesthetic face silhouette -->
                         <svg class="w-8 h-8 text-brandPink" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M50 15C55 25 58 32 50 45C42 58 48 70 52 85" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
                             <path d="M40 25C44 23 48 24 50 28C52 32 50 36 46 38C42 40 40 44 42 48" stroke="url(#logoGrad)" stroke-width="3" stroke-linecap="round"/>
                             <defs>
                                 <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
-                                    <stop offset="0%" stop-color="#ec4899" />
+                                    <stop offset="0%" stop-color="#db2777" />
                                     <stop offset="100%" stop-color="#8b5cf6" />
                                 </linearGradient>
                             </defs>
@@ -140,9 +140,9 @@
             <nav class="hidden lg:flex items-center gap-6">
                 <a href="#home" class="text-slate-600 hover:text-brandPink font-semibold transition-colors">Home</a>
                 <a href="#about" class="text-slate-600 hover:text-brandPink font-semibold transition-colors">Dr. Ghosh</a>
-                <a href="#services" class="text-slate-600 hover:text-brandPink font-semibold transition-colors">Services</a>
+                <a href="#services" class="text-slate-600 hover:text-brandPink font-semibold transition-colors">Treatments Board</a>
                 <a href="#visualizer-section" class="text-slate-600 hover:text-brandPink font-semibold transition-colors">3D Physiology</a>
-                <a href="#gallery" class="text-slate-600 hover:text-brandPink font-semibold transition-colors">Gallery</a>
+                <a href="#gallery" class="text-slate-600 hover:text-brandPink font-semibold transition-colors">Clinic Gallery</a>
                 <a href="#testimonials" class="text-slate-600 hover:text-brandPink font-semibold transition-colors">Reviews</a>
                 <a href="#faq" class="text-slate-600 hover:text-brandPink font-semibold transition-colors">FAQ</a>
                 <a href="#contact" class="text-slate-600 hover:text-brandPink font-semibold transition-colors">Contact</a>
@@ -152,9 +152,9 @@
             <div class="flex items-center gap-3">
                 <button onclick="toggleConfigurator()" class="bg-slate-100 hover:bg-slate-200 text-slate-700 py-2 px-3 sm:px-4 rounded-xl font-bold text-xs sm:text-sm flex items-center gap-2 transition-all shadow-sm">
                     <i class="fa-solid fa-sliders text-brandPink animate-spin-slow"></i>
-                    <span class="hidden sm:inline">Customize Info</span>
+                    <span class="hidden sm:inline">Customize Website</span>
                 </button>
-                <a href="#booking-section" class="bg-gradient-to-r from-brandPink to-brandPurple hover:from-brandPink hover:to-brandPurple text-white font-bold text-xs sm:text-sm py-2.5 px-4 sm:px-5 rounded-xl transition-all shadow-md shadow-pink-100 hover:shadow-pink-200 flex items-center gap-1.5" id="cta-book-now">
+                <a href="#booking-section" class="bg-gradient-to-r from-brandPink to-brandPurple hover:from-pink-600 hover:to-purple-600 text-white font-bold text-xs sm:text-sm py-2.5 px-4 sm:px-5 rounded-xl transition-all shadow-md shadow-pink-100 hover:shadow-pink-200 flex items-center gap-1.5" id="cta-book-now">
                     <i class="fa-solid fa-calendar-check text-xs"></i> Book Slot
                 </a>
                 
@@ -187,8 +187,8 @@
             </div>
             <div class="pt-6 border-t border-slate-100">
                 <span class="text-xs text-slate-400 block mb-2">Need Urgent Consultation?</span>
-                <a href="tel:+919830055111" class="text-brandPink font-bold text-base flex items-center gap-2">
-                    <i class="fa-solid fa-phone"></i> +91 98300 55111
+                <a href="tel:+919830442017" class="text-brandPink font-bold text-base flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i> +91 98304 42017
                 </a>
             </div>
         </div>
@@ -200,9 +200,9 @@
         <div class="p-5 bg-gradient-to-r from-slate-900 to-purple-950 text-white flex items-center justify-between">
             <div>
                 <h3 class="font-extrabold text-lg flex items-center gap-2 font-outfit">
-                    <i class="fa-solid fa-sliders text-brandPink"></i> Live Website Customizer
+                    <i class="fa-solid fa-sliders text-brandPink"></i> Website Live Customizer
                 </h3>
-                <p class="text-xs text-slate-300">Customize Dr. Ghosh's details & services live on this screen!</p>
+                <p class="text-xs text-slate-300">Modify Dr. Sourjya Ghosh's details live on this screen!</p>
             </div>
             <button onclick="toggleConfigurator()" class="text-slate-300 hover:text-white text-2xl font-bold">&times;</button>
         </div>
@@ -225,7 +225,11 @@
                     <input type="text" id="cfg-doctor-quals" oninput="updateLiveContent()" class="w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brandPink" value="MBBS, MD (Aesthetic Medicine), Fellowship in Cosmetology">
                 </div>
                 <div>
-                    <label class="block text-xs font-semibold text-slate-600 mb-1">Tagline Specialization Category</label>
+                    <label class="block text-xs font-semibold text-slate-600 mb-1">Clinic Specialties Board (From Signboard)</label>
+                    <input type="text" id="cfg-specialties-board" oninput="updateLiveContent()" class="w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brandPink" value="Hair, Skin, Laser, Slimming & Dental">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-600 mb-1">Active Specialization Tab Category</label>
                     <select id="cfg-specialization" onchange="updateSpecialization(); updateLiveContent()" class="w-full px-3 py-2 border rounded-lg text-sm bg-white focus:outline-none focus:ring-2 focus:ring-brandPink">
                         <option value="skin_laser" selected>Skin, Laser & Face Aesthetics</option>
                         <option value="hair_slimming">Hair Restoration & Slimming</option>
@@ -244,7 +248,7 @@
                 </div>
                 <div>
                     <label class="block text-xs font-semibold text-slate-600 mb-1">Doctor Biography Profile</label>
-                    <textarea id="cfg-about-bio" oninput="updateLiveContent()" rows="4" class="w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brandPink">Dr. Sourjya Ghosh is an exceptionally skilled Aesthetic physician, trichologist, and laser cosmetic specialist with over 15 years of prestigious clinical expertise in Kolkata. Recognized for executing flawless, non-surgical beauty enhancements, customized skin peeling therapies, hair follicle reactivation, and advanced dental smile transformations, his medical workflow places patient safety, biological integrity, and state-of-the-art diagnostic protocols above all else.</textarea>
+                    <textarea id="cfg-about-bio" oninput="updateLiveContent()" rows="4" class="w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brandPink">Dr. Sourjya Ghosh is an exceptionally skilled Aesthetic physician, trichologist, and laser cosmetic specialist with over 15 years of prestigious clinical expertise in Kolkata. Fully recognized for executing flawless, non-surgical beauty enhancements, customized skin peeling therapies, hair follicle reactivation, and advanced dental smile transformations, his medical workflow places patient safety, biological integrity, and state-of-the-art diagnostic protocols above all else.</textarea>
                 </div>
                 <div>
                     <label class="block text-xs font-semibold text-slate-600 mb-1">Languages (Comma separated)</label>
@@ -258,7 +262,7 @@
                 <div class="grid grid-cols-3 gap-2">
                     <div>
                         <label class="block text-xs font-semibold text-slate-500 mb-1">Primary Pink</label>
-                        <input type="color" id="cfg-primary-color" onchange="updateThemeColors()" class="w-full h-10 border p-1 rounded-lg bg-white cursor-pointer" value="#ec4899">
+                        <input type="color" id="cfg-primary-color" onchange="updateThemeColors()" class="w-full h-10 border p-1 rounded-lg bg-white cursor-pointer" value="#db2777">
                     </div>
                     <div>
                         <label class="block text-xs font-semibold text-slate-500 mb-1">Secondary Purple</label>
@@ -284,12 +288,8 @@
                 </div>
                 <div>
                     <label class="block text-xs font-semibold text-slate-600 mb-1">Mobile / Booking Number</label>
-                    <input type="text" id="cfg-emergency-phone" oninput="updateLiveContent()" class="w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brandPink" value="+91 98300 55111">
+                    <input type="text" id="cfg-emergency-phone" oninput="updateLiveContent()" class="w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brandPink" value="+91 98304 42017">
                 </div>
                 <div>
-                    <label class="block text-xs font-semibold text-slate-600 mb-1">Full Physical Address</label>
-                    <input type="text" id="cfg-address" oninput="updateLiveContent()" class="w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brandPink" value="86, Monohar Pukur Road, Kolkata - 700029 (West Bengal)">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold text-slate-600 mb-1">Landmark Description</label>
-                    <input type="text" id="cfg-landmark" oninput="updateLiveContent()" class="w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brandPink
+                    <label class="block text-xs font-semibold text-slate-600 mb-1">Full Physical Address (Signboard Match)</label>
+                    <input type="text" id="cfg-address" oninput="updateLiveContent()" class="w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:rin
